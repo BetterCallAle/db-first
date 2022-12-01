@@ -1,18 +1,18 @@
 CARS
 
-id - INT - PRIMARY_KEY - AUTO_INCREMENT
-brand - VARCHAR(20) - NOTNULL 
+id  - INT - PRIMARY_KEY - AUTO_INCREMENT
+brand - VARCHAR(20) - NOTNULL - INDEX
 model - VARCHAR(40) - NOTNULL
-production_year - YYYY - NULL
-first_owner - TINYINT - NULL
 horses - TINYINT - NOTNULL
 displacement_cc - TINYINT - NOTNULL
-price - DECIMAL(8,2) - NOTNULL
-car_equipment - VARCHAR(100) - NULL
-kilometers_traveled - FLOAT(6,2) - NULL
-full_optional - TINYINT - NULL
 emission_class - VARCHAR(7) - NOTNULL
-color - VARCHAR(10) - NULL
 car_img - VARCHAR(255) - NOTNULL - DEFAULT("img/img-not-found.png")
-description - VARCHAR(150) - NULL
+price - DECIMAL(8,2) - NOTNULL
 in_stock - TINYINT - NOTNULL
+kilometers_travelled - MEDIUMINT - NOTNULL
+production_year - YYYY - NULL
+first_owner - TINYINT - NULL
+car_equipment - VARCHAR(100) - NULL
+full_optional - TINYINT - NULL
+color - VARCHAR(10) - NULL
+description - VARCHAR(150) - NULL
